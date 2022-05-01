@@ -64,7 +64,8 @@ return packer.startup(function(use)
   -- use('lunarvim/darkplus.nvim')
   -- If you are using Packer
   use('marko-cerovac/material.nvim')
-  use('karb94/neoscroll.nvim')
+  -- use('karb94/neoscroll.nvim')
+  use {'declancm/cinnamon.nvim'}
   -- cmp plugins
   use('hrsh7th/nvim-cmp') -- The completion plugin
   use('hrsh7th/cmp-buffer') -- buffer completions

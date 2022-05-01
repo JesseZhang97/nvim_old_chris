@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["cinnamon.nvim"] = {
+    loaded = true,
+    path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/cinnamon.nvim",
+    url = "https://github.com/declancm/cinnamon.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -153,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
-  },
-  ["neoscroll.nvim"] = {
-    loaded = true,
-    path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
-    url = "https://github.com/karb94/neoscroll.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
