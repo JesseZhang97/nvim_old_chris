@@ -42,8 +42,8 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>", opts)
 -- move 5 lines at a time
 -- keymap("n", "J", "5j", opts)
 -- keymap("n", "K", "5k", opts)
-keymap("n", "J", "<cmd>lua Scroll('5j',0,1,25,0)<CR>", opts)
-keymap("n", "K", "<cmd>lua Scroll('5k',0,1,25,0)<CR>", opts)
+keymap("n", "J", "<cmd>lua Scroll('5j',1,1,25,0)<CR>", opts)
+keymap("n", "K", "<cmd>lua Scroll('5k',1,1,25,0)<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter

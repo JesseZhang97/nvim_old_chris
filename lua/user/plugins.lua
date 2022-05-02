@@ -105,6 +105,24 @@ return packer.startup(function(use)
   -- Git
   use('lewis6991/gitsigns.nvim')
 
+  -- sesion manager
+  use {
+    'rmagatti/session-lens',
+    requires = { 'rmagatti/auto-session', 'nvim-telescope/telescope.nvim' },
+    config = function()
+      require('session-lens').setup({ --[[your custom config--]] })
+    end
+  }
+  -- cheatsheet
+  use {
+    'sudormrfbin/cheatsheet.nvim',
+
+    requires = {
+      { 'nvim-telescope/telescope.nvim' },
+      { 'nvim-lua/popup.nvim' },
+      { 'nvim-lua/plenary.nvim' },
+    }
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
