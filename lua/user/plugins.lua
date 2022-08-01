@@ -59,11 +59,13 @@ return packer.startup(function(use)
   use('antoinemadec/FixCursorHold.nvim') -- This is needed to fix lsp doc highlight
   use('folke/which-key.nvim')
   use('stevearc/dressing.nvim')
+  use 'echasnovski/mini.nvim'
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use('lunarvim/darkplus.nvim')
   -- If you are using Packer
   use('marko-cerovac/material.nvim')
+  use('sainnhe/everforest')
   -- use('karb94/neoscroll.nvim')
   use('declancm/cinnamon.nvim')
   -- cmp plugins
@@ -89,7 +91,7 @@ return packer.startup(function(use)
   use('mfussenegger/nvim-dap')
   use('theHamsta/nvim-dap-virtual-text')
   use({ 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } })
-
+  use('mfussenegger/nvim-dap-python')
   -- Telescope
   use('nvim-telescope/telescope.nvim')
 
@@ -106,23 +108,24 @@ return packer.startup(function(use)
   use('lewis6991/gitsigns.nvim')
 
   -- sesion manager
-  use {
+  use({
     'rmagatti/session-lens',
     requires = { 'rmagatti/auto-session', 'nvim-telescope/telescope.nvim' },
     config = function()
-      require('session-lens').setup({ --[[your custom config--]] })
-    end
-  }
+      require('session-lens').setup({ --[[your custom config--]]
+      })
+    end,
+  })
   -- cheatsheet
-  use {
+  use({
     'sudormrfbin/cheatsheet.nvim',
 
     requires = {
       { 'nvim-telescope/telescope.nvim' },
       { 'nvim-lua/popup.nvim' },
       { 'nvim-lua/plenary.nvim' },
-    }
-  }
+    },
+  })
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

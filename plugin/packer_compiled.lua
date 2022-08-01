@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/dressing.nvim",
     url = "https://github.com/stevearc/dressing.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -174,6 +179,11 @@ _G.packer_plugins = {
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/material.nvim",
     url = "https://github.com/marko-cerovac/material.nvim"
   },
+  ["mini.nvim"] = {
+    loaded = true,
+    path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
+  },
   ["nlsp-settings.nvim"] = {
     loaded = true,
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
@@ -198,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-python"] = {
+    loaded = true,
+    path = "/Users/daydreamer/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
+    url = "https://github.com/mfussenegger/nvim-dap-python"
   },
   ["nvim-dap-ui"] = {
     loaded = true,

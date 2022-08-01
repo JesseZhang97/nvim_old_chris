@@ -5,14 +5,14 @@ end
 
 local lspconfig = require('lspconfig')
 
-local servers = { 'jsonls', 'sumneko_lua', 'tsserver', 'cssls', 'html', 'quick_lint_js' }
+local servers = { 'jsonls', 'sumneko_lua', 'tsserver', 'cssls', 'html', 'pyright', 'kotlin_language_server' }
 
 lsp_installer.setup({
   ensure_installed = servers,
 })
 
 for _, server in pairs(servers) do
-  local opts = {
+ local opts = {
     on_attach = require('user.lsp.handlers').on_attach,
     capabilities = require('user.lsp.handlers').capabilities,
   }

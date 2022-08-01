@@ -1,51 +1,32 @@
 -- following options are the default
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-vim.g.nvim_tree_icons = {
-  default = "",
-  symlink = "",
-  git = {
-    unstaged = "",
-    staged = "S",
-    unmerged = "",
-    renamed = "➜",
-    deleted = "",
-    untracked = "U",
-    ignored = "◌",
-  },
-  folder = {
-    -- arrow_open = " ",
-    -- arrow_closed = "",
-    default = "",
-    open = "",
-    empty = "",
-    empty_open = "",
-    symlink = "",
-  },
-}
 
-local status_ok, nvim_tree = pcall(require, "nvim-tree")
+local status_ok, nvim_tree = pcall(require, 'nvim-tree')
 if not status_ok then
   return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+local config_status_ok, nvim_tree_config = pcall(require, 'nvim-tree.config')
 if not config_status_ok then
   return
 end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup {
+nvim_tree.setup({
   -- update_to_buf_dir = {
   --   enable = false,
   -- },
   -- disable_netrw = true,
   -- hijack_netrw = true,
   -- open_on_setup = false,
+  renderer = {
+  },
+
   ignore_ft_on_setup = {
-    "startify",
-    "dashboard",
-    "alpha",
+    'startify',
+    'dashboard',
+    'alpha',
   },
   -- auto_close = true,
   -- open_on_tab = false,
@@ -63,10 +44,10 @@ nvim_tree.setup {
   diagnostics = {
     enable = true,
     icons = {
-      hint = "",
-      info = "",
-      warning = "",
-      error = "",
+      hint = '',
+      info = '',
+      warning = '',
+      error = '',
     },
   },
   update_focused_file = {
@@ -91,14 +72,14 @@ nvim_tree.setup {
     width = 30,
     height = 30,
     hide_root_folder = false,
-    side = "left",
+    side = 'left',
     -- auto_resize = true,
     mappings = {
       custom_only = false,
       list = {
-        { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
-        { key = "v", cb = tree_cb "vsplit" },
+        { key = { 'l', '<CR>', 'o' }, cb = tree_cb('edit') },
+        { key = 'h', cb = tree_cb('close_node') },
+        { key = 'v', cb = tree_cb('vsplit') },
       },
     },
     number = false,
@@ -119,4 +100,4 @@ nvim_tree.setup {
   --   folder_arrows = 1,
   --   tree_width = 30,
   -- },
-}
+})

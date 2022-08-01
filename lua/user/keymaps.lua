@@ -45,6 +45,11 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>", opts)
 keymap("n", "J", "<cmd>lua Scroll('5j',1,1,25,0)<CR>", opts)
 keymap("n", "K", "<cmd>lua Scroll('5k',1,1,25,0)<CR>", opts)
 
+-- debug
+-- stepover
+keymap("n", "<F5>", "<cmd>lua require'dap'.continue()<CR>", opts)
+keymap("n", "<F10>", "<cmd>lua require'dap'.step_over()<CR>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
